@@ -1,0 +1,12 @@
+@using System.Web.Http
+@using DTM.Test.Api.Areas.HelpPage.ModelDescriptions
+@model ModelDescription
+
+<link type="text/css" href="~/Areas/HelpPage/HelpPage.css" rel="stylesheet" />
+<div id="body" class="help-page">
+    <h1>@Model.Name</h1>
+    <p>@Model.Documentation</p>
+    <section class="content-wrapper main-content clear-fix">
+        @Html.DisplayFor(m => Model)
+    </section>
+</div>
